@@ -4,7 +4,6 @@ import { useHistory } from "react-router-dom";
 const LinkButtons = () => {
     const history = useHistory();
     const handleClick = (event) => {
-        console.log("wtf", event.target.id)
         history.push(`/${event.target.id}`)
     }
     return (
@@ -23,16 +22,9 @@ const LinkButtons = () => {
                 <button id="about-me" onClick={handleClick}>
                     About Me
                 </button>
-                <div id="SEARCH">
-                    <form className="search-form">
-                        <input type="text"
-                            id="search-bar"
-                        // value={searchTerm} 
-                        // onChange={handleChange} 
-                        />
-                        <button id="search-button"></button>
-                    </form>
-                </div>
+                <button id="contact" onClick={handleClick}>
+                    Contact
+                </button>
             </div>
         </div>
     )
