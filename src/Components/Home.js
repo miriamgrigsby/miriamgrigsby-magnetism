@@ -1,10 +1,14 @@
 import React from 'react'
+import AboutPaleomag from './AboutPaleomag'
+import LinkButtons from './LinkButtons'
 
 const Home = () => {
+   
     return (
-        <div>
-            <h1>Paleomagnestism</h1>
-        </div>
+        <>
+            <LinkButtons />
+            <AboutPaleomag />
+        </>
     )
 }
 

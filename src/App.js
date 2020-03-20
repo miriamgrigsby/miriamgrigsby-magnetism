@@ -1,15 +1,24 @@
 import React from 'react';
 import './App.css';
 import Home from './Components/Home'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Analysis from './Components/Analysis'
+import PoleReversal from './Components/PoleReversal'
+import VisualDisplay from './Components/VisualDisplay'
+import AboutMe from './Components/AboutMe'
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Route exact path='/'>
+      <Redirect exact from="/" to="/home" />
+        <Route exact path='/home' >
           <Home />
         </Route>
+        <Route exact path='/analysis' component={Analysis} />
+        <Route exact path='/pole-reversal' component={PoleReversal} />
+        <Route exact path='/visual-display' component={VisualDisplay} />
+        <Route exact path='/about-me' component={AboutMe} />
       </div>
     </Router>
   );
