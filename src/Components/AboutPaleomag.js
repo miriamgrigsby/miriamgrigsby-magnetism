@@ -75,14 +75,14 @@ class AboutPaleomag extends Component {
                         <div>Explore Paleomagnetism by clicking on the links below.</div>
                         <div id="paleomag-links">
                             <button id="what-is-paleomag"  className="paleomag-more-info" onClick={this.handleSetURL}
-                            data-url="http://www.geo.mtu.edu/KeweenawGeoheritage/IRKeweenawRift/Paleomagnetism.html">Paleomagnetism</button>
+                            data-url="https://www.infoplease.com/encyclopedia/earth/geology-oceanography/info/paleomagnetism">Paleomagnetism</button>
                             <button id="implications-of-paleomag" className="paleomag-more-info" onClick={this.handleSetURL}
                             data-url="https://science.jrank.org/pages/4990/Paleomagnetism-Paleomagnetism-plate-tectonic-theory.html">Implications of Paleomagnetism</button>
                             <button id="paleomag-record"  className="paleomag-more-info" onClick={this.handleSetURL} data-url="https://personal.utdallas.edu/~pujana/oceans/mag.html">How rocks record Paleomagnetic Data </button>
                             <button id="true-polar-wander" className="paleomag-more-info" onClick={this.handleSetURL} data-url="https://courses.seas.harvard.edu/climate/eli/Courses/EPS281r/Sources/Polar-wander/more/True-polar-wander-Wikipedia.pdf">True Polar Wander</button>
                             <button id="geomag-vs-paleomag" className="paleomag-more-info" onClick={this.handleSetURL} 
                             data-url="https://www.youtube.com/embed/0rGz862VPRo">Bow Shock</button>
-                            <button id="magnetic-minerals"  className="paleomag-more-info" onClick={this.handleSetURL} data-url="http://www.eniscuola.net/en/2017/01/09/at-the-origin-of-rocks-the-secrets-of-paleomagnetism/" >Magnetic Minerals</button>
+                            <button id="magnetic-minerals"  className="paleomag-more-info" onClick={this.handleSetURL} data-url="https://www.naturalhistorymag.com/naturenet/291850/magnetic-minerals" >Magnetic Minerals</button>
                             {
                                 this.state.modalClicked == true
                                     ? <WhatIsPaleomagModal handleClick={this.handleClick} clickedURL={this.state.clickedURL} clickedHeader={this.state.clickedHeader} handleReset={this.handleReset}/>
