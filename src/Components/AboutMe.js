@@ -8,7 +8,7 @@ const AboutMe = () => {
             <div className="about-me">
                 <h1>about me</h1>
             </div>
-            
+
         </div>
     )
 }

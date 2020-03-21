@@ -6,7 +6,7 @@ const Analysis = () => {
     return (
         <div className="analysis">
             <LinkButtons />
-           <h1>analysis</h1>
+            <h1>analysis</h1>
         </div>
     )
 }

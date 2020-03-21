@@ -5,12 +5,9 @@ body {
 }
 
 #logo {
-  background-image: url(./logo1.png);
   background-repeat: no-repeat;
-  background-size: 100%;
-  height: 150px;
-  width: 175px;
-  margin-top: -1%;
+  height: 135px;
+  width: 150px;
   cursor: pointer;
 }
 
@@ -49,7 +46,7 @@ body {
 
 
 #paleomag-image {
-  background-image: url(./paleo.png);
+  background-image: url(./PhotoResources/paleo.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 60%;
@@ -94,7 +91,7 @@ body {
 #close-paleomag-modal {
   margin-left: 96%;
   margin-top: -5%;
-  background-image: url(https://lh3.googleusercontent.com/proxy/hvhRddUkJupf9yLNXY0XAV7gRrDiM5aSVehISFalyyi87nsHBhKYvFoYQN27Rl_9g01wVZ5XblxvGG4xl6dNuY65w6zE8WX-I4CY7Xo7Ahn4b41TKUDw_yAVqbWIq5tCMwPjMTLysZfEn2SmeJCKOeYp);
+  background-image: url(./PhotoResources/modalCloseButton.png);
   background-repeat: no-repeat;
   width: 2%;
   height: 5%;
@@ -196,7 +193,7 @@ margin-left: 2%;
 }
 
 #magneto-img {
-  background-image: url(./Components/bacteria.jpg);
+  background-image: url(./PhotoResources/bacteria.jpg);
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -218,14 +215,14 @@ margin-left: 2%;
 }
 
 #camera-image { 
-margin-right: 1%;
- height: 85%;
- width: 11%;
- cursor: pointer;
- background-image: url(https://img.pngio.com/hd-camera-icon-white-small-white-camera-icon-transparent-white-camera-icon-png-850_645.png);
- background-size: cover;
- background-repeat: no-repeat;
- color: transparent
+  margin-right: 1%;
+  height: 85%;
+  width: 11%;
+  cursor: pointer;
+  background-image: url(./PhotoResources/cameraImage.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent
 }
 
 #camera-image:hover {
@@ -237,7 +234,6 @@ margin-right: 1%;
 }
 
 #techName {
-  /* position: absolute; */
   margin-top: -20%;
   font-size: xx-large;
   background-color: transparent;
@@ -299,7 +295,7 @@ transform: scale(1.2);
 display: flex;
 flex-direction: row;
 width: 100%;
-height: 300%;
+height:120%;
 position: absolute;
 margin-top: 10%;
 background-color: black;
@@ -309,7 +305,6 @@ background-color: black;
   display: flex;
   flex-direction: column;
   width: 55%;
-  height: 100%;
   padding-left: 1%;
   padding-right: 1%;
 }
@@ -325,14 +320,14 @@ background-color: black;
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 10%;
+  height: 25%;
   margin-bottom: 3%;
 }
 
 
 .about-paleomag {
   width: 100%;
-  height: 20%;
+  height: 50%;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -341,7 +336,7 @@ background-color: black;
 
 .magneto-box {
   width: 100%;
-  height: 20%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -371,6 +366,5 @@ background-color: black;
   height: max-content;
   background-color: white;
   margin-bottom: 2%;
-  /* margin-left: 53%; */
 }
 

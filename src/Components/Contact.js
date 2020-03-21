@@ -7,7 +7,7 @@ const AboutMe = () => {
             <LinkButtons />
             <div className="contact">
             </div>
-            
+
         </div>
     )
 }

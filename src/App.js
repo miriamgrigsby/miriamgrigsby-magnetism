@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <Redirect exact from="/" to="/home" />
+        <Redirect exact from="/" to="/home" />
         <Route exact path='/home' >
           <Home />
         </Route>

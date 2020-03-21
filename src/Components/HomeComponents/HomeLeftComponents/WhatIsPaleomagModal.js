@@ -1,17 +1,18 @@
 import React from 'react'
 import Modal from 'react-modal'
 import Iframe from 'react-iframe'
+import modalBackground from '../../../PhotoResources/modalBackground.jpg'
 
 
 const customStyles = {
     content: {
-        backgroundImage: "url(" + "https://www.texturepalace.com/gallery/concrete/120913/concrete-texture-16.jpg" + ")",
+        backgroundImage: "url(" + modalBackground + ")",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
     }
 };
 
-const WhatIsPaleomagModal = ({handleClick, clickedURL, clickedHeader, handleReset}) => {
+const WhatIsPaleomagModal = ({ handleClick, clickedURL, clickedHeader, handleReset }) => {
     const [modalIsOpen, setIsOpen] = React.useState(true);
 
     const closeModal = () => {
@@ -19,7 +20,6 @@ const WhatIsPaleomagModal = ({handleClick, clickedURL, clickedHeader, handleRese
         handleClick()
         handleReset()
     }
-
 
     return (
         <div>
@@ -32,12 +32,12 @@ const WhatIsPaleomagModal = ({handleClick, clickedURL, clickedHeader, handleRese
                 <h2 className="modal-header">{clickedHeader}</h2>
                 <button onClick={closeModal} id="close-paleomag-modal"></button>
                 <Iframe url={clickedURL}
-                        width="95%"
-                        height="92%"
-                        display="initial"
-                        id="modal-iframe"
-                        name="ModalIframe"
-                        />
+                    width="95%"
+                    height="92%"
+                    display="initial"
+                    id="modal-iframe"
+                    name="ModalIframe"
+                />
             </Modal>
         </div>
     )

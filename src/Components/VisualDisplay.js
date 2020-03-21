@@ -6,7 +6,7 @@ const VisualDisplay = () => {
     return (
         <div className="visual-display">
             <div id="logo" onClick={() => history.push("/home")}></div>
-           <h1>visual display</h1>
+            <h1>visual display</h1>
         </div>
     )
 }
