@@ -381,12 +381,52 @@ background-color: black;
   position: absolute;
   margin-top: 11%;
   overflow: hidden;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(25px);
   margin-left: 1.25%;
   box-shadow: 0 0 6px 3px black;
   font-size: large;
 }
 
+.just-abstract {
+  display: flex;
+  flex-direction: column; 
+  width: 97.5%;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.205);
+  font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+  margin-top: 11%;
+  overflow: hidden;
+  backdrop-filter: blur(15px);
+  margin-left: 1.25%;
+  box-shadow: 0 0 6px 3px black;
+  font-size: x-large;
+}
+
+#toggle-readMore {
+  width: 25%;
+  height: 12%;
+  align-self: center;
+  font-size: larger;
+  cursor: pointer;
+  background-color: transparent;
+  box-shadow: 0 0 6px 3px black;
+  border: none;
+}
+
+#close-paper {
+  margin-top: 1%;
+  margin-left: 96.5%;
+  background-image: url(./PhotoResources/modalCloseButton.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 2.5%;
+  height: 0.33%;
+  background-color: transparent;
+  position: absolute;
+  border: none;
+  cursor: pointer;
+}
 
 .analysis-background {
   background-image: url(https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2017/05/p-1-could-towing-icebergs.jpg);
@@ -397,7 +437,7 @@ background-color: black;
   position: fixed;
 }
 
-.abstract {
+.section {
   margin-left: 3%;
   margin-right: 3%;
   
@@ -439,16 +479,23 @@ background-color: black;
   margin-right: 3%;
 }
 
-#abstract-paragraph {
+#paragraph {
   text-indent: 50px;
   line-height: 1.8;
 }
+
 
 #hanging-indent {
   text-indent: -36px;
   padding-left: 2%;
   padding-right: 2%;
   margin-left: 2%;
+  margin-top: -1%;
+}
+#hanging-indent2 {
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-left: -8%;
   margin-top: -1%;
 }
 
@@ -488,18 +535,18 @@ background-color: black;
   margin: 3%;
 }
 
-#abstract-paragraph2 {
+#paragraph2 {
   text-indent: 50px;
   line-height: 1.8;
   margin-top: -2%;
 }
 
-#abstract-paragraph3 {
+#paragraph3 {
   line-height: 1.8;
   margin-left: 2%;
   margin-top: -0.5%;
 }
-#abstract-paragraph4 {
+#paragraph4 {
   text-indent: 50px;
   line-height: 1.8;
   /* margin-left: 2%; */
