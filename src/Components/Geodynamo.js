@@ -3,9 +3,8 @@ import LinkButtons from './LinkButtons'
 
 const PoleReversal = () => {
     return (
-        <div className="pole-reversal">
+        <div className="geodynamo">
             <LinkButtons />
-            <h1>pole reversal</h1>
         </div>
     )
 }

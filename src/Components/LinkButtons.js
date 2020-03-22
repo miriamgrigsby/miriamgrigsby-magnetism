@@ -12,13 +12,13 @@ const LinkButtons = () => {
             <img src={logo} id="logo" onClick={() => history.push("/home")}></img>
             <div id="top-links">
                 <button id="analysis" onClick={handleClick}>
-                    Data Analysis
+                    Magnetic Analysis
                 </button>
-                <button id="pole-reversal" onClick={handleClick}>
-                    Pole Reversal
+                <button id="geodynamo" onClick={handleClick}>
+                    Geodynamo
                 </button>
                 <button id="visual-display" onClick={handleClick}>
-                    Visual Display
+                    Visualization
                 </button>
                 <button id="about-me" onClick={handleClick}>
                     About Me
