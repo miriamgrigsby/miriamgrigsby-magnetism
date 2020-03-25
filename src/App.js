@@ -6,6 +6,8 @@ import Geodynamo from './Components/Geodynamo'
 import VisualDisplay from './Components/VisualDisplay'
 import AboutMe from './Components/AboutMe'
 import Contact from './Components/Contact'
+import Resume from './Components/Resume'
+import Projects from './Components/Projects'
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
         <Route exact path='/geodynamo' component={Geodynamo} />
         <Route exact path='/visual-display' component={VisualDisplay} />
         <Route exact path='/about-me' component={AboutMe} />
+        <Route exact path='/resume' component={Resume} />
+        <Route exact path='/projects' component={Projects} />
         <Route exact path='/contact' component={Contact} />
       </div>
     </Router>

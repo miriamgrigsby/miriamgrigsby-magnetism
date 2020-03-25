@@ -1,16 +1,19 @@
 import React from 'react'
 import LinkButtons from './LinkButtons'
-import Antiquity from '../PhotoResources/antiquity.pdf'
+import Miriam_Grigsby from '../PhotoResources/Miriam_Grigsby.pdf'
 import Iframe from 'react-iframe'
 
-const PoleReversal = () => {
+
+const Resume = () => {
+ 
+
     return (
-        <div className="geodynamo">
+        <div>
             <LinkButtons />
-            <div className="antiquity-background">
+            <div className="resume-background">
             <Iframe 
-                className="antiquity-iframe"
-                url={Antiquity}
+                className="resume-iframe"
+                url={Miriam_Grigsby}
                 width="100%"
                 height="100%"
                 display="initial"
@@ -20,4 +23,4 @@ const PoleReversal = () => {
     )
 }
 
-export default PoleReversal
+export default Resume

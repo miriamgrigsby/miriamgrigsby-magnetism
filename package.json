@@ -8,6 +8,8 @@
     "@testing-library/user-event": "^7.1.2",
     "exenv": "^1.2.2",
     "prop-types": "^15.7.2",
+    "rc-dropdown": "^3.0.2",
+    "rc-menu": "^8.0.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-iframe": "^1.8.0",

@@ -47,6 +47,24 @@ body {
   outline: none;
 }
 
+#analysis:hover, #geodynamo:hover, #visual-display:hover, #about-me:hover, #contact:hover {
+  background-color: #c28285;
+}
+
+#highlighted-link {
+  width: 20%;
+  background-color: red;
+  color: white;
+  border-right: 2px solid rgba(255, 255, 255, 0.555);
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  font-size: x-large;
+  font-weight: bolder;
+  cursor: pointer;
+  outline: none;
+}
+
 
 #paleomag-image {
   background-image: url(./PhotoResources/paleo.png);
@@ -417,7 +435,7 @@ background-color: black;
 #close-paper {
   margin-top: 1%;
   margin-left: 96.5%;
-  background-image: url(./PhotoResources/modalCloseButton.png);
+  background-image: url(./PhotoResources/blackCloseButton.png);
   background-size: 100%;
   background-repeat: no-repeat;
   width: 2.5%;
@@ -718,13 +736,11 @@ background-color: black;
 
 .sized-figure6-images {
   width: 40%;
-  /* height: 10%; */
   margin: 3%;
 }
 
 .sized-figure7-images {
   width: 95%;
-  /* height: 10%; */
   margin: 3%;
 }
 
@@ -733,4 +749,248 @@ background-color: black;
   min-height: 30%;
   margin: 1%;
   margin-top: 1%;
+}
+
+.download-button {
+  margin-top: 1%;
+  position: absolute;
+  color: white;
+  background-color: red;
+}
+
+.resume-background, .antiquity-background {
+  background-size: 100%;
+  width: 100%;
+  height: 125%;
+  margin-top: 10%;
+  position: absolute;
+  display: flex;
+}
+
+.resume-iframe, .antiquity-iframe {
+  background-color: white;
+}
+
+.contact-form {
+  position: absolute;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 6%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+#form-input {
+  font-size: x-large;
+  text-align: center;
+  width: 100%;
+  border: none;
+  background-color: black;
+  box-shadow: 0 0 1px 1px whitesmoke;
+  opacity: 0.6;
+  outline: none;
+  color: white;
+  height: 10%;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+
+#form-submit {
+  margin-top: 5%;
+  width: 25%;
+  font-size: medium;
+  height: 7%;
+  align-self: center;
+  background-color: black;
+  opacity: 0.6;
+  border: none;
+  color: white;
+  box-shadow: 0 0 6px 2px whitesmoke;
+  cursor: pointer;
+  font-family: 'Julius Sans One', sans-serif;
+  margin-bottom: 2%;
+  transition: all 0.25s ease;
+}
+
+#form-submit:hover {
+  background-color: rgba(247, 247, 34, 0.24);
+  opacity: 0.8;
+}
+
+.contact {
+  flex-direction: column;
+  background-image: url(./PhotoResources/moonBackground.png);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin-top: 10%;
+  position: absolute;
+  display: flex;
+  font-family: 'Julius Sans One', sans-serif;
+  
+}
+
+#top-contact-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 15%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#contact-header {
+  color: yellow;
+ 
+}
+
+#bottom-contact-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 85%;
+  justify-content: space-around;
+}
+
+
+#bottom-left {
+  height: 90%;
+  width: 30%;
+  margin-top: 4.5%;
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+#bottom-middle {
+  height: 90%;
+  width: 30%;
+  margin-top: 4.5%;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+}
+
+#bottom-right {
+  height: 90%;
+  width: 30%;
+  margin-top: 4.5%;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+}
+
+#topic-headers {
+  width: 100%;
+  min-height: 10%;
+ padding-left: 2%;
+  color: rgb(167, 161, 161);
+}
+
+#coffee-map {
+  width: 100%;
+  height: 90%;
+  margin-top: 5%;
+}
+
+#location-div {
+  width: 100%;
+  height: 47%;
+  margin-top: 2%;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+#location-left {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: yellow;
+  font-family: 'Julius Sans One', sans-serif;
+
+}
+
+#location-right {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: 'Julius Sans One', sans-serif;
+
+}
+
+#linkedIn {
+  font-size: 1.5rem;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  color: white;
+}
+
+#things-to-know-div {
+  width: 100%;
+  height: 100%;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 3%;
+  /* box-shadow: 0 0 6px 4px whitesmoke; */
+}
+
+#things-to-know-top{
+  width: 98%; 
+  padding-left: 2%;
+  height: 30%;
+  color: rgb(167, 161, 161);
+  font-size: medium;
+  font-weight: bold;
+}
+
+#things-to-know-middle{
+  width: 98%;
+  padding-left: 2%;
+  height: 30%;
+  color: rgb(167, 161, 161);
+  font-size: medium;
+  font-weight: bold;
+}
+
+#things-to-know-bottom{
+  width: 98%;
+  padding-left: 2%;
+  height: 30%;
+  color: rgb(167, 161, 161);
+  font-size: small;
+  font-weight: bold;
+}
+
+#things-to-know-headers {
+  color: white;
+  font-size: larger;
+}
+
+#form-textarea {
+  font-size: x-large;
+  width: 100%;
+  border: none;
+  background-color: black;
+  box-shadow: 0 0 2px 1px whitesmoke;
+  opacity: 0.6;
+  outline: none;
+  color: white;
+  height: 35%;
+  font-family: 'Julius Sans One', sans-serif;
+  margin-bottom: 2%;
+
 }
