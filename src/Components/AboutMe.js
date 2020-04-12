@@ -6,7 +6,11 @@ const AboutMe = () => {
         <div>
             <LinkButtons />
             <div className="about-me">
-                <h1>about me</h1>
+                <div className="top-about-me">
+                </div>
+                <div className="middle-about-me">
+                    
+                </div>
             </div>
 
         </div>

@@ -36,9 +36,6 @@ const LinkButtons = () => {
         </Menu>
     );
 
-
-
-
     return (
         <div className="homepage">
             <img src={logo} id="logo" onClick={() => history.push("/about-me")}></img>
