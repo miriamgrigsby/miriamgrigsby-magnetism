@@ -1072,11 +1072,15 @@ background-color: black;
   position: fixed;
   width: 100%;
   height: 1000px;
-  background-image:url(./PhotoResources//aboutMe.gif);
-  background-size: cover;
+  background-image:url(./PhotoResources//aboutMe.png);
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-color: red;
   margin-top: 10%;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .middle-about-me {
@@ -1087,3 +1091,34 @@ background-color: black;
   margin-top: 900px;
 }
 
+#aboutme-title {
+  text-align: center;
+  color: fuchsia;
+  margin-top: -10%;
+ 
+  font-size: 400%;
+}
+
+#aboutme-title2 {
+  text-align: center;
+  color: white;
+  /* margin-top: -10%; */
+  font-size: 400%;
+}
+
+#about-me-buttonDiv {
+  width: 30%;
+  height: 10%;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+}
+
+#about-me-button {
+  height: 80%;
+  width: 60%;
+  font-size: xx-large;
+  font-family: 'Orbitron', sans-serif;
+}
