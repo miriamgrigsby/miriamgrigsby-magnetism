@@ -6,7 +6,7 @@ const VisualDisplay = () => {
     const history = useHistory();
     return (
         <div className="visual-display">
-            <img src={logo} id="logo" onClick={() => history.push("/home")}></img>
+            <img src={logo} id="logo" onClick={() => history.push("/about-me")}></img>
         </div>
     )
 }

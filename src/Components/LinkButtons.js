@@ -14,7 +14,7 @@ const LinkButtons = () => {
     }
 
     const [visibility, onVisibilityChange] = React.useState(false)
-    
+
     const onSelect = (key) => {
         console.log(`${key.key} selected`)
         history.push(`/${key.key}`)
@@ -24,55 +24,46 @@ const LinkButtons = () => {
         onVisibilityChange(visible)
     }
 
-    const menu2 = (
-        <Menu onSelect={onSelect} >
-        <MenuItem key="about-me" >Profile</MenuItem>
-        
-        </Menu>
-    )
-
     const menu = (
         <Menu onSelect={onSelect} >
-            <MenuItem key="about-me" >Profile</MenuItem>
-            <Divider/>
-            <MenuItem key="resume">Resume</MenuItem>
-            <Divider/>
-            <MenuItem key="projects">Projects</MenuItem>
+            <MenuItem key="home">About Paleomag</MenuItem>
+            <Divider />
+            <MenuItem key="analysis" >Magnetic Analysis</MenuItem>
+            <Divider />
+            <MenuItem key="geodynamo">Geodynamo</MenuItem>
+            <Divider />
+            <MenuItem key="visual-display">Visualization</MenuItem>
         </Menu>
     );
 
-   
-    
+
+
 
     return (
         <div className="homepage">
-            <img src={logo} id="logo" onClick={() => history.push("/home")}></img>
+            <img src={logo} id="logo" onClick={() => history.push("/about-me")}></img>
             <div id="top-links">
-                <button id="analysis" onClick={handleClick}>
-                    Magnetic Analysis
+                <button id="about-me" onClick={handleClick}>
+                    About Me
                 </button>
-                <button id="geodynamo" onClick={handleClick}>
-                    Geodynamo
-                </button>
-                <button id="visual-display" onClick={handleClick}>
-                    Visualization
+                <button id="project" onClick={handleClick}>
+                    Projects
                 </button>
                 <Dropdown
-                trigger={['hover']}
-                onVisibleChange={onVisibleChange}
-                visible={visibility}
-                closeOnSelect={true}
-                overlay={menu}
-                animation="slide-up"
-                // overlayClassName="rc-dropdown-menu"
-            >
-                <button id="about-me">
-                    About Me
+                    trigger={['hover']}
+                    onVisibleChange={onVisibleChange}
+                    visible={visibility}
+                    closeOnSelect={true}
+                    overlay={menu}
+                    animation="slide-up"
+                >
+                    <button id="home">
+                        Paleomagnetism
                 </button>
-            </Dropdown>
-                {/* <button id="about-me" onClick={handleClick}>
-                    About Me
-                </button> */}
+                </Dropdown>
+                <button id="resume" onClick={handleClick}>
+                    Resume
+                </button>
                 <button id="contact" onClick={handleClick}>
                     Contact
                 </button>

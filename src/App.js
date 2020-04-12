@@ -14,16 +14,16 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Redirect exact from="/" to="/home" />
-        <Route exact path='/home' >
-          <Home />
+        <Redirect exact from="/" to="/about-me" />
+        <Route exact path='/about-me' >
+          <AboutMe />
         </Route>
         <Route exact path='/analysis' component={Analysis} />
         <Route exact path='/geodynamo' component={Geodynamo} />
         <Route exact path='/visual-display' component={VisualDisplay} />
-        <Route exact path='/about-me' component={AboutMe} />
+        <Route exact path='/home' component={Home} />
         <Route exact path='/resume' component={Resume} />
-        <Route exact path='/projects' component={Projects} />
+        <Route exact path='/project' component={Projects} />
         <Route exact path='/contact' component={Contact} />
       </div>
     </Router>

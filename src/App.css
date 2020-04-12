@@ -33,7 +33,7 @@ body {
   margin: 1%;
 }
 
-#analysis, #geodynamo, #visual-display, #about-me, #contact{
+ #about-me, #contact, #project, #home, #resume{
   width: 20%;
   background-color: transparent;
   color: white;

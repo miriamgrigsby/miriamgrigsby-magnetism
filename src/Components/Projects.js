@@ -6,7 +6,7 @@ const Projects = () => {
     const history = useHistory();
     return (
         <div className="projects">
-            <img src={logo} id="logo" onClick={() => history.push("/home")}></img>
+            <img src={logo} id="logo" onClick={() => history.push("/about-me")}></img>
         </div>
     )
 }
